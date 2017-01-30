@@ -33,7 +33,7 @@ else
 fi
 
 cd electrum-git
-VERSION="PKB2.6.2.1"
+VERSION="PKB2.6.2.2"
 echo "Last commit: $VERSION"
 
 cd ..
