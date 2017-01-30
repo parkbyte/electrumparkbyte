@@ -341,13 +341,13 @@ def time_difference(distance_in_time, include_seconds):
         return "over %d years" % (round(distance_in_minutes / 525600))
 
 block_explorer_info = {
-    'CryptoID.info': ('https://chainz.cryptoid.info/pkb/',
-                        {'tx': 'tx.dws?', 'addr': 'address.dws?'})
+    'Insight Block Explorer': ('https://insight.parkbyte.com',
+                        {'tx': 'tx/', 'addr': 'addr/'})
    
 }
 
 def block_explorer(config):
-    return config.get('block_explorer', 'CryptoID.info')
+    return config.get('block_explorer', 'Insight Block Explorer')
 
 def block_explorer_tuple(config):
     return block_explorer_info.get(block_explorer(config))
